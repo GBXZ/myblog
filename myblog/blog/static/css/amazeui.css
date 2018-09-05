@@ -3464,7 +3464,10 @@ fieldset[disabled] .am-checkbox-inline {
   border-radius: 0;
 }
 .am-pagination .am-pagination-center {
-  text-align: center;
+  float: right;
+}
+am-pagination .am-pagination-center a {
+  border-radius: 0;
 }
 .am-pagination-centered {
   text-align: center;
@@ -13173,7 +13176,8 @@ tbody.am-collapse.am-in {
   font-size: 1.6rem;
 }
 .am-pagination-default .am-pagination-prev,
-.am-pagination-default .am-pagination-next {
+.am-pagination-default .am-pagination-next, 
+.am-pagination-default .am-pagination-center{
   float: none;
 }
 /**
