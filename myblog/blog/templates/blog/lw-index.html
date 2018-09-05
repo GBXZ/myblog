@@ -36,7 +36,7 @@
 <!-- content srart -->
 <div class="am-g am-g-fixed blog-fixed">
     <div class="am-u-md-8 am-u-sm-12">
-	 {% for article in articles %}
+	 {% for article in page %}
         <article class="am-g blog-entry-article">
             <div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-img">
                 <img src="http://127.0.0.1:8000/media/{{article.chatu}}" alt="" class="am-u-sm-12">
@@ -46,7 +46,7 @@
                 <span> @amazeUI &nbsp;</span>
                 <span>{{article.add_time}}</span>
                 <h1><a href="">{{article.title}}</a></h1>
-                <p>我们一直在坚持着，不是为了改变这个世界，而是希望不被这个世界所改变。
+                <p>{{article.jiexuan}}......
                 </p>
                 <p><a href="" class="blog-continue">continue reading</a></p>
             </div>
@@ -54,6 +54,9 @@
          {% endfor %}
         <ul class="am-pagination">
   <li class="am-pagination-prev"><a href="">&laquo; Prev</a></li>
+	{% for p in p_count%}
+	 <li class="am-pagination-center"><a href="">{{p}}</a></li>
+	{% endfor %}
   <li class="am-pagination-next"><a href="">Next &raquo;</a></li>
 </ul>
     </div>

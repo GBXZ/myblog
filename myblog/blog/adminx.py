@@ -8,9 +8,9 @@ class WriterAdmin(object):
 
 
 class ArticleAdmin(object):
-	list_display = ['title','content','writer','chatu','add_time','change_time','article_tage']
+	list_display = ['title','content','jiexuan','writer','chatu','add_time','change_time','article_tage']
 	search_fields = ["title","writer","article_tage"]
-	list_filter =  ['title','content','writer','add_time','change_time','article_tage']
+	list_filter =  ['title','content','jiexuan','writer','add_time','change_time','article_tage']
 
 
 class BannerAdmin(object):

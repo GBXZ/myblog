@@ -3463,6 +3463,9 @@ fieldset[disabled] .am-checkbox-inline {
 .am-pagination .am-pagination-next a {
   border-radius: 0;
 }
+.am-pagination .am-pagination-center {
+  text-align: center;
+}
 .am-pagination-centered {
   text-align: center;
 }

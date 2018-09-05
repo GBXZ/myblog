@@ -39,6 +39,7 @@ class User_view(models.Model):
 class Article(models.Model):
 	title = models.CharField(max_length = 100,verbose_name = u"文章标题" )
 	content = models.TextField(verbose_name = u"正文")
+	jiexuan = models.CharField(max_length = 200,default="",verbose_name = u"文章节选")
 	writer = models.ForeignKey(Writer,on_delete = models.CASCADE,verbose_name = u"作者")
 	chatu = models.ImageField(upload_to="chatu/%Y/%m",verbose_name = u"文章插图",max_length = 100)
 	add_time = models.DateField(auto_now_add = True,verbose_name = u"添加时间")
